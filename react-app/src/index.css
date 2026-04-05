@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-bg-dark text-text-main;
+    background: radial-gradient(circle at 50% -10%, #0d1e15, #10221C 80%);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .desktop-only {
+    @apply flex max-md:hidden;
+  }
+  .mobile-only {
+    @apply hidden max-md:flex;
+  }
+}
